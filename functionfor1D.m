@@ -1,6 +1,6 @@
-%function [coefs,xaxis] = functionfor1D(pathofthefilename)
-%filename=pathofthefilename;%'.\diode1n4148.txt';
-filename='.\diode1n4148.txt';
+function [coefs,xaxis] = functionfor1D(pathofthefilename)
+filename=pathofthefilename;%'.\diode1n4148.txt';
+%filename='.\diode1n4148.txt';
 
 [a,b,c]=textread(filename,'%f%f%f','headerlines',1);%a:V1 b:V(Diode) c:I(Diode)
 
